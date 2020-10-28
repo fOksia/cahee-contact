@@ -74,17 +74,16 @@ li {
   opacity: 1;
 }
 
-.list__input::before {
+li::before {
   content: '';
   width: 5px;
   background-color: transparent;
   position: absolute;
   top: 0;
-  left: 0;
   bottom: 0;
 }
 
-.list__input:before:focus {
+li:before:focus + .list__input:focus {
   background-color: #070d13;
 }
 
