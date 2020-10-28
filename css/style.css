@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+a, button {
+  transition: all .3s ease-in-out;
+}
+
+html {
+  font-size: 10px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 1.5em;
+}
+
+.contact__top {
+  padding: 10em 0 11.5em;
+}
+
+.contact__title {
+  font-size: 9em;
+  margin: 0;
+  text-align: center;
+  font-weight: 700;
+}
+
+.contact__top p:first-of-type {
+  text-align: center;
+  font-size: 1.7em;
+  max-width: 350px;
+  margin: 0 auto;
+  margin-top: 2.64em;
+}
+
+.contact__bloks {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4.5em;
+}
+
+.block--1-2 {
+  width: calc(50% - 85px);
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  position: relative;
+}
+
+.list__input {
+  min-width: 500px;
+  margin-bottom: 1em;
+  background-color: rgb(123,221,220);
+  opacity: .7;
+  outline: none;
+  border: none;
+  padding: 1em 1.5em;
+  font-size: 1.5em;
+  position: relative;
+}
+
+.list__input:focus {
+  opacity: 1;
+}
+
+.list__input::before {
+  content: '';
+  width: 5px;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.list__input:before:focus {
+  background-color: #070d13;
+}
+
+.list__input--area {
+  min-height: 250px;
+}
+
+.list__input::placeholder {
+  color: #ffffff;
+}
+
+.info {
+  font-size: 1.5em;
+  font-style: normal;
+} 
+
+.info__title {
+  font-weight: 700;
+}
+
+.info__descr {
+  margin-bottom: 1.2em;
+}
+
+.footer {
+  background-color: #262626;
+}
+
+.footer__inner {
+  display: flex;
+  justify-content: space-between;padding: 3em 0;
+  color: #ffffff;
+  align-items: center;
+}
+
+.footer__descr {
+  font-size: 1.6em;
+}
+
+.footer__author {
+  font-size: 1.5em;
+}
+
+.footer__link {
+  color: #f12b55;
+  text-decoration: none;
+}
+
+.footer__link:focus,
+.footer__link:hover,
+.footer__link:active {
+  color: #74d7d4;
+  border-bottom: 1px solid #74d7d4;
+}
