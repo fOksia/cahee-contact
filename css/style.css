@@ -56,35 +56,23 @@ html {
 
 li {
   position: relative;
+  margin-bottom: 1em;
 }
 
 .list__input {
   min-width: 500px;
-  margin-bottom: 1em;
   background-color: rgb(123,221,220);
   opacity: .7;
   outline: none;
   border: none;
+  border-left: transparent;
   padding: 1em 1.5em;
   font-size: 1.5em;
-  position: relative;
 }
 
 .list__input:focus {
   opacity: 1;
-}
-
-li::before {
-  content: '';
-  width: 5px;
-  background-color: transparent;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-}
-
-li:before:focus + .list__input:focus {
-  background-color: #070d13;
+  border-left: 4px solid #355b82;
 }
 
 .list__input--area {
